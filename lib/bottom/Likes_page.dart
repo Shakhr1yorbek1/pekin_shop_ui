@@ -10,6 +10,6 @@ class Likes_page extends StatefulWidget {
 class _Likes_pageState extends State<Likes_page> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return const Scaffold();
   }
 }

@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.Shakhriyorbek.pekin_shop_ui">
    <application
-        android:label="pekin_shop_ui"
+        android:label="ZARA shop"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

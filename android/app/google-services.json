@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1044706457056",
+    "firebase_url": "https://zara-shop-7d5d0-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "zara-shop-7d5d0",
+    "storage_bucket": "zara-shop-7d5d0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1044706457056:android:6e9360a7f1f2f33cade785",
+        "android_client_info": {
+          "package_name": "com.Shakhriyorbek.pekin_shop_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1044706457056-hdelgg4qhmks8gmp97h7dvmrr7vvilu9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7liCVoyUUel9oV5QCQEaNMtvHqSKGUfA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1044706457056-hdelgg4qhmks8gmp97h7dvmrr7vvilu9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
