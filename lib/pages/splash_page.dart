@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pekin_shop_ui/bottom/Home.dart';
-
-import 'BottomNavigatorBar.dart';
+import '../auth_pages/signin_page.dart';
+import 'main_page.dart';
 
 class SplashPage extends StatefulWidget {
   const SplashPage({Key? key}) : super(key: key);
@@ -21,9 +20,12 @@ class _SplashPageState extends State<SplashPage> {
   bool isLogged = false;
   Future<void> initPage() async {
     await Future.delayed(const Duration(seconds: 2),);
-    if (isLogged) {}   else {
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const Example()));
+    if (isLogged) {
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const MainPage()));
+    } else {
+      // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => SignInPage(),));
     }
+
   }
 
 

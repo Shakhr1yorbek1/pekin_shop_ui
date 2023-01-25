@@ -1,12 +1,10 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
-
 import 'package:flutter/material.dart';
-import 'package:pekin_shop_ui/pages/BottomNavigatorBar.dart';
-import 'package:pekin_shop_ui/pages/SplashPage.dart';
-
-import 'Login/SingIn.dart';
+import 'package:pekin_shop_ui/pages/home_page.dart';
+import 'package:pekin_shop_ui/pages/main_page.dart';
+import 'auth_pages/signin_page.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,9 +19,10 @@ class MyApp extends StatelessWidget {
       stream: FirebaseAuth.instance.authStateChanges(),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          return const Example();
+          return const MainPage();
         } else {
-          return const SignInPage();
+          return const MyPhone
+            ();
         }
       },
     );
@@ -34,11 +33,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const SplashPage(),
+      home: const HomePage(),
     );
   }
 }

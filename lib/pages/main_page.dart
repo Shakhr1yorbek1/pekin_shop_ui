@@ -2,27 +2,28 @@
 
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:pekin_shop_ui/pages/market_page.dart';
+import 'package:pekin_shop_ui/pages/search_page.dart';
+import 'package:pekin_shop_ui/pages/settings_page.dart';
 
-import '../bottom/Home.dart';
-import '../bottom/Likes_page.dart';
-import '../bottom/Search_page.dart';
-import '../bottom/Setting_page.dart';
+import 'home_page.dart';
+import 'likes_page.dart';
 
 
-class Example extends StatefulWidget {
-  const Example({super.key});
+class MainPage extends StatefulWidget {
+  const MainPage({super.key});
 
   @override
-  _ExampleState createState() => _ExampleState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _ExampleState extends State<Example> {
+class _MainPageState extends State<MainPage> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
-   home(),
-    Likes_page(),
-    Search_page(),
-    Setting_page(),
+   HomePage(),
+    LikesPage(),
+    marketPage(),
+    SettingPage(),
 
   ];
 
@@ -66,8 +67,8 @@ class _ExampleState extends State<Example> {
                     text: 'Likes',
                   ),
                   GButton(
-                    icon: Icons.search,
-                    text: 'Search',
+                    icon: Icons.shopping_cart_outlined,
+                    text: 'shop',
                   ),
                   GButton(
                     icon: Icons.settings,

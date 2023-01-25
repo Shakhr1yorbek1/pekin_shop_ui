@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-import '../Login/SingIn.dart';
+import '../auth_pages/signin_page.dart';
 import '../service/auth_service.dart';
 
-class Setting_page extends StatefulWidget {
-  const Setting_page({Key? key}) : super(key: key);
+class SettingPage extends StatefulWidget {
+  const SettingPage({Key? key}) : super(key: key);
 
   @override
-  State<Setting_page> createState() => _Setting_pageState();
+  State<SettingPage> createState() => _SettingPageState();
 }
 
-class _Setting_pageState extends State<Setting_page> {
+class _SettingPageState extends State<SettingPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +20,7 @@ class _Setting_pageState extends State<Setting_page> {
           IconButton(
             onPressed: (){
               AuthService.signOutUser().then((value) => {
-                Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const SignInPage())),
+                // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const SignInPage())),
               });
             },
             icon: const Icon(Icons.logout),
